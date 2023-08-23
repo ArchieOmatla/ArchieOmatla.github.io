@@ -1,0 +1,50 @@
+{
+  "hash": "35254aaa",
+  "browserHash": "6b05d520",
+  "optimized": {
+    "react/jsx-runtime": {
+      "src": "../../react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "96aae7a1",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "d3f66b93",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../react/index.js",
+      "file": "react.js",
+      "fileHash": "e68d9147",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "6f5cf3a7",
+      "needsInterop": true
+    },
+    "react-icons/fa": {
+      "src": "../../react-icons/fa/index.esm.js",
+      "file": "react-icons_fa.js",
+      "fileHash": "867bce8b",
+      "needsInterop": false
+    },
+    "react-icons/bs": {
+      "src": "../../react-icons/bs/index.esm.js",
+      "file": "react-icons_bs.js",
+      "fileHash": "6a22d47a",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-EVUDGIZ6": {
+      "file": "chunk-EVUDGIZ6.js"
+    },
+    "chunk-C3URVCCN": {
+      "file": "chunk-C3URVCCN.js"
+    }
+  }
+}
