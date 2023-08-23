@@ -20,19 +20,20 @@ nav ul {
   margin: 0;
   background-color: #d6d58e;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
 }
 nav li {
+  align-content: space-between;
   text-align: center;
-  flex-basis: 20%;
+  flex-basis: 10%;
 }
 
 section {
   padding: 1rem 1rem;
 }
 #intro h1 {
-  color: #c43302;
+  color: #02c40c;
 }
 #contact {
   text-align: center;
@@ -64,7 +65,7 @@ h1 a {
 nav a {
   display: block;
   color: #005c53;
-  padding: 1rem;
+  padding: 10% 0;
   text-decoration: none;
 }
 nav a:hover {
@@ -95,11 +96,12 @@ article li {
   flex-basis: 10%;
 }
 article a:link {
-  color: #a68f97;
+  color: #382e32;
   text-decoration: none;
 }
 article a:hover {
   text-decoration: underline;
+  font-weight: bold;
 }
 article p {
   border-radius: 10px;
