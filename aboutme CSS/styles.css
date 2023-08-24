@@ -106,16 +106,16 @@ article li {
   text-align: center;
   flex-basis: 10%;
 }
-article a:link {
-  color: #312a2c;
+article a {
+  color: #614950;
   text-decoration: none;
 }
 article a:visited {
-  color: #312a2c;
+  color: #614950;
   text-decoration: none;
 }
 article a:hover {
-  color: #55494c;
+  color: #817175;
   text-decoration: underline;
 }
 article p {
