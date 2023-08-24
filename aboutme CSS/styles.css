@@ -167,10 +167,10 @@ article h4 {
   padding-bottom: 0;
 }
 #projects h2 {
-  color: #9fc131;
+  color: #657a1f;
 }
 article h3 {
-  color: cadetblue;
+  color: rgb(67, 114, 116);
 }
 
 @media (min-width: 700px) {
