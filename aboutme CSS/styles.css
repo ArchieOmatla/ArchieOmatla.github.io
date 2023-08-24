@@ -106,7 +106,7 @@ article li {
   text-align: center;
   flex-basis: 10%;
 }
-article a {
+article a:link {
   color: #ff4858;
   text-decoration: none;
 }
