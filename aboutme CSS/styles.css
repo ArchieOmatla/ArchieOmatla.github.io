@@ -107,15 +107,15 @@ article li {
   flex-basis: 10%;
 }
 article a {
-  color: #614950;
+  color: #ff4858;
   text-decoration: none;
 }
 article a:visited {
-  color: #614950;
+  color: #ff4858;
   text-decoration: none;
 }
 article a:hover {
-  color: #817175;
+  color: #a52f38;
   text-decoration: underline;
 }
 article p {
