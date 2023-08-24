@@ -4,8 +4,8 @@ body {
   margin: 0;
   background-color: #e4f2e7;
 }
-.header {
-  text-align: center;
+header {
+  background-color: #d6d58e;
 }
 h1,
 h2,
@@ -18,26 +18,38 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: #d6d58e;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
 }
+nav h1 {
+  margin: 0;
+  padding: 0;
+}
+nav li:first-child {
+  flex-basis: 100%;
+}
 nav li {
-  align-content: space-between;
-  text-align: center;
-  flex-basis: 10%;
+  flex-basis: auto;
+  margin: 0;
 }
 
 section {
-  padding: 1rem 1rem;
+  padding: 0;
+}
+#intro,
+#contact,
+#socials,
+#projects {
+  padding: 0 1rem;
 }
 #intro h1 {
-  color: #02c40c;
+  color: #c43302;
 }
 #contact {
   text-align: center;
   background-color: #dad9af;
+  padding-bottom: 5px;
 }
 #contact p {
   margin: 0 auto;
@@ -64,14 +76,13 @@ h1 a {
 
 nav a {
   display: block;
+  text-align: center;
   color: #005c53;
-  padding: 10% 0;
+  padding: 0.5rem;
   text-decoration: none;
 }
-nav a:hover {
-  font-size: larger;
-  background-color: #9fc131;
-  color: #042940;
+header li:first-child a {
+  padding: 0.5rem;
 }
 .gradient {
   background: linear-gradient(
@@ -81,7 +92,7 @@ nav a:hover {
     rgba(0, 212, 255, 1) 100%
   );
   height: 3px;
-  padding: 0 1rem;
+  padding: 0;
 }
 article ul {
   list-style-type: none;
@@ -96,12 +107,11 @@ article li {
   flex-basis: 10%;
 }
 article a:link {
-  color: #382e32;
+  color: #a68f97;
   text-decoration: none;
 }
 article a:hover {
   text-decoration: underline;
-  font-weight: bold;
 }
 article p {
   border-radius: 10px;
@@ -109,7 +119,7 @@ article p {
   background-color: #96c1bd;
 }
 footer {
-  padding: 1rem 1rem;
+  padding: 0;
   text-align: center;
   background-color: #5f9ea0;
 }
@@ -143,6 +153,7 @@ footer a:hover {
 }
 img {
   margin-top: 5px;
+  margin-bottom: 5px;
   border-radius: 10px;
   width: 100%;
 }
@@ -157,16 +168,16 @@ article h3 {
   color: cadetblue;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 700px) {
   article {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
     gap: 1rem;
   }
   .article_text {
-    text-align: left;
+    text-align: right;
     order: 1;
-    grid-column: 1/8;
+    grid-column: 7/15;
     grid-row: 1/2;
   }
   article p {
@@ -174,19 +185,53 @@ article h3 {
     text-align: justify;
   }
   article ul {
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
   #projects img {
-    grid-column: 7/15;
+    grid-column: 1/8;
     grid-row: 1/2;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  nav h1 {
+    margin: 0;
+    padding: 0;
+  }
+  nav li:first-child {
+    margin-right: auto;
+    flex-basis: auto;
+  }
+
+  nav a {
+    display: block;
+    text-align: left;
+    color: #005c53;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  nav a:hover {
+    font-size: larger;
+    background-color: #9fc131;
+    color: #042940;
+  }
+  nav h1 a:hover {
+    color: #005c53;
+    background-color: #d6d58e;
+    font-size: unset;
   }
 }
 
 @media (min-width: 850px) {
   footer,
   .gradient,
-  nav,
-  section {
+  section,
+  header {
     max-width: 1200px;
     margin: 0 auto;
   }
